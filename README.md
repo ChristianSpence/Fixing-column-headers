@@ -1,10 +1,10 @@
 # Fixing-column-headers
 
 ## Description
-The function `tidy_column_names()` repairs typically Microsoft Excel file imports where, in the raw data, column headers are spread over multiple rows and/or include merged cells.
+The function `merge_column_names()` repairs typically Microsoft Excel file imports where, in the raw data, column headers are spread over multiple rows and/or include merged cells.
 
 ## Usage
-`tidy_column_names(df, name_rows, first_data_row = NULL, sep = " ", drop_name_rows = TRUE)`
+`merge_column_names(df, name_rows, first_data_row = NULL, sep = " ", drop_name_rows = TRUE)`
 
 ## Arguments
 `df` must be a data frame
