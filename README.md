@@ -18,7 +18,7 @@ The function `tidy_column_names()` repairs typically Microsoft Excel file import
 `drop_name_rows` by default removes all rows named in `named_rows` and also all rows up to but not including `first_data_row`.
 
 ## Details
-Values in merged cells are allocated to all cells to the right of the initial value where rows which include separate columns grouped under a merged cell are specified within `name_rows`. Empty cells are also filled rightwards with the value of the preceding (i.e. leftwards) non-empty cell in the same row. Any vlue within `name_rows` which contains a numerical digit at the end of word is assumed to be a footnote character and are removed.
+Values in merged cells are allocated to all cells to the right of the initial value where rows which include separate columns grouped under a merged cell are specified within `name_rows`. Empty cells are also filled rightwards with the value of the preceding (i.e. leftwards) non-empty cell in the same row. Any value within `name_rows` which contains a numerical digit at the end of a word is assumed to be a footnote character and is removed.
 
 ## Value
 Returns a `data frame`.
